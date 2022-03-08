@@ -37,5 +37,27 @@ public class Testing {
 		
 	}
 	// verification des congés
-
+	@Test
+	public void verifDuree()
+	{
+		assertTrue(ct.verifDuree(10));
+	}
+	@Test
+	public void verifRaison()
+	{
+		assertTrue(ct.verifRaison("maladie covid urgente"));
+	}
+	//verification des salaires
+	@Test
+	public void verifNett()
+	{
+		assertTrue(st.VerifNet(2000));
+	}
+	@Test
+	public void verifBrute()
+	{
+		assertTrue(st.verifSalaire(1800, 1400));
+	}
+// verification des employées
+	
 }
