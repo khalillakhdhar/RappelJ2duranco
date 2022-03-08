@@ -59,5 +59,18 @@ public class Testing {
 		assertTrue(st.verifSalaire(1800, 1400));
 	}
 // verification des employées
+	@Test
+	public void verifNom()
+	{
+		assertTrue(et.validerName("testeAdmin"));
+		
+	}
+	@Test
+	public void verifEmail()
+	{
+		assertTrue(et.emailValid("test@admin.com"));
+		
+	}
+	
 	
 }
